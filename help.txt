@@ -1,0 +1,26 @@
+Iterative solution
+
+Animation of an iterative algorithm solving 6-disk problem
+A simple solution for the toy puzzle is to alternate moves between the smallest piece 
+and a non-smallest piece. When moving the smallest piece, always move it to the next position 
+in the same direction (to the right if the starting number of pieces is even, 
+to the left if the starting number of pieces is odd). If there is no tower position 
+in the chosen direction, move the piece to the opposite end, but then continue to move 
+in the correct direction. For example, if you started with three pieces, you would move the smallest piece
+ to the opposite end, then continue in the left direction after that. When the turn is to move the 
+ non-smallest piece, there is only one legal move. Doing this will complete the puzzle in the fewest moves.[5]
+
+Simpler statement of iterative solution
+For an even number of disks:
+
+make the legal move between pegs A and B (in either direction),
+make the legal move between pegs A and C (in either direction),
+make the legal move between pegs B and C (in either direction),
+repeat until complete.
+For an odd number of disks:
+
+make the legal move between pegs A and C (in either direction),
+make the legal move between pegs A and B (in either direction),
+make the legal move between pegs B and C (in either direction),
+repeat until complete.
+In each case, a total of 2n − 1 moves are made.
